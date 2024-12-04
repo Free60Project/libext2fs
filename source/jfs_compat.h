@@ -3,6 +3,7 @@
 #define _JFS_COMPAT_H
 
 #include "kernel-list.h"
+#include "endianswap.h"
 #include <errno.h>
 #ifdef HAVE_NETINET_IN_H
 #include <netinet/in.h>

@@ -15,19 +15,11 @@
 
 #include "config.h"
 
-#ifdef XENON
-void sleep(int i){
-  delay(i);
-}
-#else
-#if HAVE_UNISTD_H
-#include <unistd.h>
-#endif
-#endif
 #include <sys/time.h>
 
 #include <sys/types.h>
 #include <sys/stat.h>
+#include <unistd.h>
 #include <fcntl.h>
 
 #include "ext2_fs.h"
