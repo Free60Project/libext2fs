@@ -25,7 +25,7 @@ INCLUDES	:=
 # options for code generation
 #---------------------------------------------------------------------------------
 
-CFLAGS		=	-g -O2 -Wall $(MACHDEP) $(INCLUDE) -DXENON -DWORDS_BIGENDIAN -U__linux__ -DNO_INLINE_FUNCS -Wno-error=implicit-function-declaration -std=gnu17
+CFLAGS		=	-g -O2 -Wall $(MACHDEP) $(INCLUDE) -DXENON -DWORDS_BIGENDIAN -U__linux__ -DNO_INLINE_FUNCS -Wno-error=implicit-function-declaration -std=gnu11
 CXXFLAGS	=	$(CFLAGS)
 LDFLAGS		=	-g $(MACHDEP) -Wl,--gc-sections -Wl,-Map,$(notdir $@).map
 
